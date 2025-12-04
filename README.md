@@ -8,7 +8,7 @@ HydroShield-AI/
 │── README.md
 │── .gitattributes
 │
-├── datasets/
+├── data/
 │   ├── KA_IMD_rainfall_2019_2023/       # Year-wise IMD rainfall CSVs
 │   ├── KA_daily_2024.csv                # Latest IMD data (2024)
 │   └── ibtracs.NI.list.v04r01.csv       # Cyclone track database
@@ -113,7 +113,8 @@ Trained models(joblib files) in models/
 
 
 ## 5. Predictions & Alerts
-- Use Colab notebook: notebook/Disaster_Prediction_Alerts_and_Dashboard.ipynb
+### 1st code cell in colab notebook
+- Use Colab notebook: notebook/Disaster_Prediction_Alerts_and_Dashboard.ipynb(create a folder in your google drive called Disaster_Prediction_Project and under that have subfolders data, models, notebook(contents same as repository folders) and outputs(to be kept empty-upon running 1st code cell in notebook, output files will be saved automatically;The output files given in repository are for reference(can be used to run 2nd code cell in notebook to visualise dashboard)))
 - Predicts daily flood & cyclone probabilities for 2024
 - Sends push notifications via ntfy if probability > 0.7
 - Saves outputs:
@@ -151,6 +152,7 @@ for i, row in df.iterrows():
 
 
 ## 6. Gradio Dashboard
+### 2nd code cell in colab notebook
 - Visualizes:
     - Daily flood & cyclone probabilities
     - Monthly averages
