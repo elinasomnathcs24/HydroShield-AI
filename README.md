@@ -127,7 +127,7 @@ Trained models(joblib files) in models/
 import requests
 
 # NTFY SETTINGS
-NTFY_TOPIC = "your-topic-here"    # replace with your subscribed topic here
+NTFY_TOPIC = "your-topic-here"   # replace with your subscribed topic in ntfy app
 NTFY_URL = f"https://ntfy.sh/{NTFY_TOPIC}"
 
 def send_alert(message):
